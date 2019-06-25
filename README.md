@@ -53,3 +53,17 @@ $ pip install -r requirements.txt
 ```
 $ python main.py
 ```
+
+## Consuming services
+
+### Requirements
+
+* curl
+```
+$ sudo apt install curl
+```
+
+### Quicksort example
+```
+$ curl -X POST "localhost:8080/quicksort" -H "accept: application/json" -H "Content-Type: application/json" -d "[ 0]"
+```
