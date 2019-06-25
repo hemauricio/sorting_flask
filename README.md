@@ -4,7 +4,7 @@ This is a basic [Flask](http://flask.pocoo.org/) application in which some of th
 most popular sorting algorithms will be implemented.
 
 
-## Local instalation
+## Local installation
 
 **The following guide was made on Ubuntu 18.04.2 LTS**
 
