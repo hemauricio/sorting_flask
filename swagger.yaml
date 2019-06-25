@@ -1,0 +1,155 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Swagger Sorting Flask"
+tags:
+- name: "sort"
+  description: "Sorting algorithms"
+paths:
+  /quicksort:
+    post:
+      tags:
+      - "sort"
+      summary: "Sorts a list of numbers using quicksort"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "List of numbers"
+        required: true
+        schema:
+          $ref: "#/definitions/input"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/output"
+  /insertionsort:
+    post:
+      tags:
+      - "sort"
+      summary: "Sorts a list of numbers using insertionsort"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "List of numbers"
+        required: true
+        schema:
+          $ref: "#/definitions/input"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/output"
+  /heapsort:
+    post:
+      tags:
+      - "sort"
+      summary: "Sorts a list of numbers using heapsort"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "List of numbers"
+        required: true
+        schema:
+          $ref: "#/definitions/input"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/output"
+  /bubblesort:
+    post:
+      tags:
+      - "sort"
+      summary: "Sorts a list of numbers using bubblesort"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "List of numbers"
+        required: true
+        schema:
+          $ref: "#/definitions/input"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/output"
+  /mergesort:
+    post:
+      tags:
+      - "sort"
+      summary: "Sorts a list of numbers using mergesort"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "List of numbers"
+        required: true
+        schema:
+          $ref: "#/definitions/input"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/output"
+  /countingsort:
+    post:
+      tags:
+      - "sort"
+      summary: "Sorts a list of numbers using countingsort"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "List of numbers"
+        required: true
+        schema:
+          $ref: "#/definitions/input"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/output"
+definitions:
+  input:
+    type: "array"
+    items:
+      type: "integer"
+  output:
+    type: "array"
+    items:
+      type: "integer"
